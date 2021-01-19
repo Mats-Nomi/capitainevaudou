@@ -47,7 +47,7 @@
     "gridUnits": "ft",
     "primaryTokenAttribute": "resources.health",
     "secondaryTokenAttribute": "resources.power",
-    "url": "https://github.com/Mats-Nomi/capitainevaudou.git",
-    "manifest": "https://your/hosted/system/repo/system.json",
+    "url": "https://github.com/Mats-Nomi/capitainevaudou",
+    "manifest": "https://github.com/Mats-Nomi/capitainevaudou/blob/master/system.json",
     "download": ""
   }
