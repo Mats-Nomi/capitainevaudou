@@ -1,0 +1,53 @@
+{
+    "name": "captainvaudou",
+    "title": "Capitaine Vaudou",
+    "description": "Capitaine Vaudou est un jeu de rôle qui mélange, en plein XVIIe siècle la vie des pirates et la pratique de la magie. Tout comme les pirates sont venus chercher l’aventure, la richesse ou bien fuir les persécutions de la vieille Europe, les magiciens ont trouvé aux Caraïbes de nouvelles puissances à invoquer et ont réveillé d’anciennes magies. Ce qui permet à l’Inquisition de pratiquer la magie noire, aux Incas de solliciter les dieux de leur défunt empire, aux Juifs de se protéger avec leurs golems et aux pirates de pourchasser les flottilles d’or espagnoles avec l’aide des loas...",
+    "version": "0.0.1",
+    "templateVersion": 2,
+    "author": "Mathieu Lagarde",
+    "scripts": [
+      "scripts/system-script-1.js",
+      "scripts/system-script-2.js"
+    ],
+    "esmodules": [
+      "scripts/system-module-1.mjs"
+    ],
+    "styles": [
+      "styles/system-styles-1.css",
+      "styles/system-styles-2.css"
+    ],
+    "packs": [
+      {
+        "name": "monsters",
+        "label": "Monsters",
+        "system": "captainvaudoo",
+        "module": "captainvaudoo",
+        "path": "packs/monsters.db",
+        "entity": "Actor"
+      },
+      {
+        "name": "items",
+        "label": "Items",
+        "system": "captainvaudoo",
+        "module": "captainvaudoo",
+        "path": "packs/items.db",
+        "entity": "Item"
+      }
+    ],
+    "languages": [
+      {
+        "lang": "fr",
+        "name": "Français",
+        "path": "lang/fr.json"
+      }
+    ],
+    "socket": false,
+    "initiative": "1d20",
+    "gridDistance": 10,
+    "gridUnits": "ft",
+    "primaryTokenAttribute": "resources.health",
+    "secondaryTokenAttribute": "resources.power",
+    "url": "https://github.com/Mats-Nomi/capitainevaudou.git",
+    "manifest": "https://your/hosted/system/repo/system.json",
+    "download": ""
+  }
