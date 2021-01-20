@@ -2,7 +2,7 @@
     "name": "captainvaudou",
     "title": "Capitaine Vaudou",
     "description": "Capitaine Vaudou est un jeu de rôle qui mélange, en plein XVIIe siècle la vie des pirates et la pratique de la magie. Tout comme les pirates sont venus chercher l’aventure, la richesse ou bien fuir les persécutions de la vieille Europe, les magiciens ont trouvé aux Caraïbes de nouvelles puissances à invoquer et ont réveillé d’anciennes magies. Ce qui permet à l’Inquisition de pratiquer la magie noire, aux Incas de solliciter les dieux de leur défunt empire, aux Juifs de se protéger avec leurs golems et aux pirates de pourchasser les flottilles d’or espagnoles avec l’aide des loas...",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "templateVersion": 2,
     "author": "Mathieu Lagarde",
     "scripts": [
@@ -43,10 +43,10 @@
     ],
     "socket": false,
     "initiative": "1d20",
-    "gridDistance": 10,
+    "gridDistance": 5,
     "gridUnits": "ft",
-    "primaryTokenAttribute": "resources.health",
-    "secondaryTokenAttribute": "resources.power",
+    "primaryTokenAttribute": null,
+    "secondaryTokenAttribute": null,
     "url": "https://github.com/Mats-Nomi/capitainevaudou",
     "manifest": "https://github.com/Mats-Nomi/capitainevaudou/blob/master/system.json",
     "download": ""
