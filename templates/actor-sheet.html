@@ -1,0 +1,92 @@
+{{!-- Sheet Header --}}
+<header class="sheet-header">
+    <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100" />
+    <div class="header-fields">
+        <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name" /></h1>
+    </div>
+</header>
+
+{{!-- Sheet Body --}}
+<section class="sheet-body">
+  <div class="body-container top">
+
+    <div class="column"><!-- start column -->
+
+      <div class="rowcontainer">
+        <div class="row headrow"><!-- start header row -->
+          <span class="headerRow composantes">Composantes</span>
+        </div><!-- end header row -->
+      </div>
+
+      <div class="rowcontainer">
+        <div class="row">
+          <a class="rowlabel sk1">Corps: </a>
+        </div>
+        <div class="row">
+          <input class="skillinput sk1" name="data.composantes.corps" value="{{data.composantes.corps}}" data-dtype="String"></select>
+        </div>
+      </div>
+
+      <div class="rowcontainer">
+        <div class="row">
+          <a class="rowlabel sk2">Coeur: </a>
+        </div>
+        <div class="row">
+          <input class="skillinput sk2" name="data.composantes.coeur" value="{{data.composantes.coeur}}" data-dtype="String"></select>
+        </div>
+      </div>
+
+      <div class="rowcontainer">
+        <div class="row">
+          <a class="rowlabel sk3">Esprit: </a>
+        </div>
+        <div class="row">
+          <input class="skillinput special sk3" name="data.composantes.esprit" value="{{data.composantes.esprit}}" data-dtype="String"></select>
+        </div>
+      </div>
+    </div><!-- end column -->
+
+    <div class="column"><!-- start column -->
+
+      <div class="rowcontainer">
+        <div class="row headrow"><!-- start header row -->
+          <span class="headerRow moyens">Moyens</span>
+        </div><!-- end header row -->
+      </div>
+
+      <div class="rowcontainer">
+        <div class="row">
+          <a class="rowlabel ob1">Perception: </a>
+        </div>
+        <div class="row">
+          <input class="skillinput ob1" name="data.moyens.perception" value="{{data.moyens.perception}}" data-dtype="String" placeholder="Pretty easy to accomplish..."></select>
+        </div>
+      </div>
+
+      <div class="rowcontainer">
+        <div class="row">
+          <a class="rowlabel ob2">Action: </a>
+        </div>
+        <div class="row">
+          <input class="skillinput ob2" name="data.moyens.action" value="{{data.moyens.action}}" data-dtype="String" placeholder="More difficult or risky..."></select>
+        </div>
+      </div>
+
+      <div class="rowcontainer">
+        <div class="row">
+          <a class="rowlabel ob3">Résistance: </a>
+        </div>
+        <div class="row">
+          <input class="skillinput ob3" name="data.moyens.resistance" value="{{data.moyens.resistance}}" data-dtype="String" placeholder="Nearly impossible to accomplish..."></select>
+        </div>
+      </div>
+
+    </div><!-- end column -->
+
+  </div><!-- body-container TOP ends here -->
+
+  <div class="body-container bottom"><!-- body-container BOTTOM starts here -->
+  </div><!-- body-container BOTTOM ends here -->
+
+</section><!-- sheet-body ends here -->
+</form>
