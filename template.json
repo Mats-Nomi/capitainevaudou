@@ -1,107 +1,76 @@
 {
-  "Actor":
-  {
-    "types": ["character"],
-    "character": {
-      "composantes" : {
-          "corps":{
-            "key" : "",
-            "label" : "",
-            "abbrev" : "",
-            "base": 3,
-            "value": 3
-          },"coeur":{
-            "key" : "",
-            "label" : "",
-            "abbrev" : "",
-            "base": 3,
-            "value": 3
-          },"esprit":{
-            "key" : "",
-            "label" : "",
-            "abbrev" : "",
-            "base": 3,
-            "value": 3
-          }
-        },
-      "moyens": {
-          "perception":{
-            "key" : "",
-            "label" : "",
-            "abbrev" : "",
-            "base": 3,
-            "value": 3
-          },"action":{
-            "key" : "",
-            "label" : "",
-            "abbrev" : "",
-            "base": 3,
-            "value": 3
-          },"resistance":{
-            "key" : "",
-            "label" : "",
-            "abbrev" : "",
-            "base": 3,
-            "value": 3
-          },
-          "target": {
-            "nature":{
-              "key" : "",
-              "label" : "",
-              "abbrev" : "",
-              "base": 3,
-              "value": 3
-            },"humain":{
-              "key" : "",
-              "label" : "",
-              "abbrev" : "",
-              "base": 3,
-              "value": 3
-            },"artificiel":{
-              "key" : "",
-              "label" : "",
-              "abbrev" : "",
-              "base": 3,
-              "value": 3
-            },"surnaturel":{
-              "key" : "",
-              "label" : "",
-              "abbrev" : "",
-              "base": 3,
-              "value": 3
-            }
-        }
-
+  "Actor": {
+    "templates":{
+      "description": {
+        "biographie": ""
       },
       "resources": {
-        "pv": {
-          "min": 0,
-          "value": 1,
-          "max": 7
-        },
-        "ps": {
-          "min": 0,
-          "value": 1,
-          "max": 7
-        },
-        "ep": {
-          "min": 0,
-          "value": 1,
-          "max": 7
-        }
+        "pv": 1,
+        "ps": 1,
+        "ep": 1
+      },
+      "energie":{
+        "puissance": 0,
+        "rapidite": 0,
+        "precision": 0
+      }
     },
+    "types": [
+      "character",
+      "pnj",
+      "encounter"
+    ],
+    "character": {
+      "template" : ["description","ressources","energie"],
+      "composantes" : {
+          "corps": 0,
+          "coeur": 0,
+          "esprit": 0
+         },
+      "moyens": {
+          "perception": 0,
+          "action": 0,
+          "resistance": 0
+      },
+      "target": {
+        "nature": 0,
+        "humain": 0,
+        "artificiel": 0,
+        "surnaturel": 0
+      },
+      "heroisme":0,
+      "vaudou": 0
+    },
+    "pnj":{
+      "template" : ["description","ressources","energie"],
+      "difficulty": 0
+    },
+    "encounter": {
+      "template" : ["description","ressources","energie"],
+      "combat": 0,
+      "perception": 0
     }
   },
   "Item":
   {
-    "types": ["item"],
-    "item":
+    "types": ["weapon","ship"],
+    "templates":{
+      "itemDescription":{
+        "description": "",
+        "price": 0
+
+      }
+    },
+    "weapon":
     {
-      "description": "",
-      "quantity": 1,
-      "weight": 0,
-      "attributes":
-      {}
+      "templates":[ "itemDescription" ]
+    },
+    "ship":{
+      "templates":[ "itemDescription" ],
+      "type": "",
+      "voilure":0,
+      "coque":0,
+      "tirant":0
     }
   }
 }
