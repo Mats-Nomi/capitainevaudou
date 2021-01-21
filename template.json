@@ -22,24 +22,24 @@
     ],
     "character": {
       "template" : ["description","ressources","energie"],
-      "composantes" : {
-          "corps": 0,
-          "coeur": 0,
-          "esprit": 0
+      "componant" : {
+          "body": 0,
+          "heart": 0,
+          "spirit": 0
          },
-      "moyens": {
+      "meanheroi": {
           "perception": 0,
           "action": 0,
           "resistance": 0
       },
       "target": {
         "nature": 0,
-        "humain": 0,
-        "artificiel": 0,
-        "surnaturel": 0
+        "human": 0,
+        "artificial": 0,
+        "supernatural": 0
       },
-      "heroisme":0,
-      "vaudou": 0
+      "heroism":0,
+      "voodoo": 0
     },
     "pnj":{
       "template" : ["description","ressources","energie"],

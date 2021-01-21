@@ -1,0 +1,27 @@
+{
+    "cv2e" : {
+        "targetType" : {
+            "human": "Humain",
+            "nature": "Nature",
+            "artificial": "Artificiel",
+            "supernatural": "surnaturel"
+        },
+        "componentType" : {
+            "body": "Corps",
+            "heart": "Coeur",
+            "spirit": "Esprit"
+        },
+        "meanType" : {
+            "perception": "Perception",
+            "action": "Action",
+            "Resistance": "Resistance"
+        },
+        "energy" : {
+            "power": "Puissance",
+            "speed": "Rapidité",
+            "precision": "Précision",
+            "heroism": "Héroïsme",
+            "voodoo": "Vaudou"
+        }
+    }
+}

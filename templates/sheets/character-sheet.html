@@ -4,7 +4,24 @@
         <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
         <p>CHARACTER</p>
     </header>
-   
+    <div>
+        <table>
+            <tr>
+                <td>{{localise "cv2e.componentType.body"}}</td>
+                <td><input name="data.componant.body" type="text" value="{{data.componant.body" data-dtype="Number" /></td>
+                <td>{{localise "cv2e.meanType.perception"}}</td>
+                <td><input name="data.mean.perception" type="text" value="{{data.mean.perception" data-dtype="Number" /></td>
+            </tr>
+
+
+            <tr>
+                <td>{{localise "cv2e.targetType.human"}}</td>
+                <td>{{localise "cv2e.targetType.nature"}}</td>
+                <td>{{localise "cv2e.targetType.artificial"}}</td>
+                <td>{{localise "cv2e.targetType.supernatural"}}</td>
+            </tr>
+            
+    </div>   
     <section class="items">
         <h3>Owned Items</h3>
         <ol class="actor-items">
