@@ -2,20 +2,21 @@
   "Actor": {
     "templates":{
       "description": {
-        "biographie": ""
+        "biography": "",
+        "targetType": ""
       },
-      "resources": {
+      "ressources": {
         "pv": 1,
         "ps": 1,
         "ep": 1
       },
-      "energie":{
-        "puissance": 0,
-        "rapidite": 0,
+      "energy":{
+        "power": 0,
+        "speed": 0,
         "precision": 0
       }
     },
-    "types": [
+    "type": [
       "character",
       "pnj",
       "encounter"
@@ -27,7 +28,7 @@
           "heart": 0,
           "spirit": 0
          },
-      "meanheroi": {
+      "mean": {
           "perception": 0,
           "action": 0,
           "resistance": 0
